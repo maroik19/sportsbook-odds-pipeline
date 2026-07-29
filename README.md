@@ -13,4 +13,4 @@ Python, PostgreSQL, psycopg2, requests, python-dotenv
    ODDS_API_KEY=your_api_key_here
    DB_PASSWORD=your_db_password_here
 4. Make sure PostgreSQL is running locally with a database named `sportsbook`, and the `fixtures`/`odds` tables created.
-5. Run the script: python pipeline.py
+5. Run the script: `python pipeline.py`
