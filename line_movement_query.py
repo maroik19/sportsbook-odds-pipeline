@@ -1,14 +1,17 @@
 import psycopg2
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 # 1. Ορισμός των στοιχείων σύνδεσης
 connection_config = {
     "dbname": "sportsbook",
     "user": "postgres",
-    "password": "123456",
+    "password": os.getenv("DB_PASSWORD"),
     "host": "localhost",       # ή την IP του server σου
     "port": "5432"             # το default port της PostgreSQL
 }
-
 
 
 
